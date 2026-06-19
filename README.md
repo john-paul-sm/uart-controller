@@ -9,7 +9,7 @@ The goal of this project is to build a complete UART transmit/receive block from
 ## Overview
 
 **UART** (*Universal Asynchronous Receiver-Transmitter*) is a serial communication protocol used to transmit data between devices over two wires: TX (transmit) and RX (receive).
-Unlike synchronous protocols (SPI, I2C), UART requires no shared clock line. Instead, both devices agree in advance on a baud rate, which is the prespecified number of bits transmitted per second, and use that to stay in sync.
+Unlike synchronous protocols (SPI, I2C), UART requires no shared clock line. Instead, both devices agree in advance on a **baud rate**, which is the prespecified number of bits transmitted per second, and use that to stay in sync.
 
 ---
 
