@@ -1,3 +1,6 @@
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+
+
 # UART Controller
 
 A UART controller written in SystemVerilog for supplementing my knowledge of digital design
@@ -10,6 +13,8 @@ The goal of this project is to build a complete UART transmit/receive block from
 
 **UART** (*Universal Asynchronous Receiver-Transmitter*) is a serial communication protocol used to transmit data between devices over two wires: TX (transmit) and RX (receive).
 Unlike synchronous protocols (SPI, I2C), UART requires no shared clock line. Instead, both devices agree in advance on a **baud rate**, which is the prespecified number of bits transmitted per second, and use that to stay in sync.
+
+
 
 ---
 
