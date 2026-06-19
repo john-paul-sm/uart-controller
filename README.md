@@ -1,3 +1,6 @@
+[![](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+
+
 # UART Controller
 
 A UART controller written in SystemVerilog for supplementing my knowledge of digital design
@@ -10,6 +13,17 @@ The goal of this project is to build a complete UART transmit/receive block from
 
 **UART** (*Universal Asynchronous Receiver-Transmitter*) is a serial communication protocol used to transmit data between devices over two wires: TX (transmit) and RX (receive).
 Unlike synchronous protocols (SPI, I2C), UART requires no shared clock line. Instead, both devices agree in advance on a **baud rate**, which is the prespecified number of bits transmitted per second, and use that to stay in sync.
+
+The protocol can be observed like this:
+
+The line is held at a logic high when idle. A transfer starts with a low start bit, followed by data bits, then one or more stop bits.
+
+idle  start      data bits       stop
+  1     0     d0 d1 d2 ... d7      1
+
+For an 8-bit UART frame with no parity and one stop bit, each byte is sent as 10 serial bits total:
+
+1 start bit + 8 data bits + 1 stop bit
 
 ---
 
