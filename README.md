@@ -1,6 +1,6 @@
 # UART Controller
 
-A UART controller written in SystemVerilog for supplementing my knowledge of RTL design and verification.
+A UART controller written in SystemVerilog for supplementing my knowledge of digital design
 
 The goal of this project is to build a complete UART transmit/receive block from the ground up, simulate it, verify the main behavior, and eventually bring it up on an FPGA board (PYNQ-Z2). I will also capture the digital design flow by writing RTL, building testbenches, debugging waveforms, and documenting the design.
 
@@ -22,7 +22,7 @@ Unlike synchronous protocols (SPI, I2C), UART requires no shared clock line. Ins
 The main open-source toolchain for this project is focused on RTL simulation and waveform debugging.
 
 ```text
-SystemVerilog  - RTL and testbench code
+SystemVerilog  - RTL design and verification
 Verilator      - simulation
 GTKWave        - waveform viewing
 Git/GitHub     - version control and documentation
